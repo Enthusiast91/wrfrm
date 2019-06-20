@@ -68,6 +68,7 @@ price-consultation: от 7<sup> </sup>000 р
 price-decor: от 700 р/м2
 
 url-interior: uslugi/dizajn-interera/
+url-interior-commerce: uslugi/dizajn-interera-kommercheskij/
 url-architecture: uslugi/arkhitekturnyj-proekt/
 url-build: uslugi/remont-pod-klyuch/
 url-visualisation: uslugi/3d-vizualizaciya/
@@ -76,6 +77,7 @@ url-consultation: uslugi/konsultaciya/
 url-decor: uslugi/dekorirovanie/
 
 image-interior: images/dizajn-interera/2018-06-29-kvartira-dvukhkomnatnaya-72-kv-m-zhk-favorit/1.jpg
+image-interior-commerce: images/dizajn-interera/2018-08-07-salon-krasoty-volgar/1.jpg
 image-architecture: img/main/2-arkhitekturnyj-proekt.jpg
 image-build: img/main/4-remont-pod-klyuch.jpg
 image-visualisation: img/main/6-dizajn-interera.jpg
@@ -83,6 +85,7 @@ image-supervision: img/main/7-avtorskij-nadzor.jpg
 image-consultation: img/main/8.jpg
 image-decor: img/main/3-dekorirovanie.jpg
 
+qqq: QQQ
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

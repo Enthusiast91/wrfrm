@@ -1,0 +1,126 @@
+{% include /header-page.html %}
+
+{% include /top-line.html %}
+
+	<section class="service interior">
+		<div class="container-fluid">
+
+				<div class="row">
+					<div class="col">
+						<h1>Дизайн интерьера<br>коммерческих помещений</h1> 
+					</div>
+				</div>
+
+				<div class="row interior-quote">
+					<div class="col-10 col-md-6">
+						<q>Дизайн - это язык. Он сообщает, какую идею несет пространство или предмет. Однако хороший дизайн не только говорит сам
+							за себя - он вовлекает в разговор</q>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6">
+						<div class="service-img" style="background-image: url({{site.image-interior-commerce}});"></div>
+					</div>
+					<div class="col-md-5 service-descript">
+						<p>Создаем стильные, функциональные и эстетичные интерьеры для самых разных помещений. В своих проектах мы взаимодействуем с общей геометрией
+							пространства и его функциональным наполнением. Имеем опыт работы как с большими, так и с маленькими площадями, как с квартирами,
+							так и с мастерскими, офисами и коммерческими помещениями.</p>
+					</div>
+				</div>
+
+		</div>
+	</section>
+
+	<section class="service-price interior">
+		<div class="container-fluid">			
+			
+			<div class="row">
+				<div class="col-12 text-center">
+					<h3>Стоимость <br class="d-md-none">дизайн-проекта:</h3>
+				</div>
+
+				<div class="col-12 col-md text-center">
+					<h4>жилого помещения:</h4>
+					<div class="service-price-value">{{site.price-interior}}</div>
+					<p>Квартиры - от 40 м2<br>Коттеджи - от 100 м2</p>
+				</div>
+
+				<div class="col-2 d-none d-md-inline-block">
+					<div class="service-price-figure">
+							<div class="service-price-figure-r"><span class="fa fa-rub"></span></div>
+							<div class="service-price-figure-l"></div>
+							<div class="service-price-figure-m">
+								<div class="service-price-figure-m-txt">м2</div>
+							</div>
+					</div>						
+				</div>
+
+				<div class="col-12 col-md text-center">
+					<h4>коммерческого <br class="d-block d-sm-none d-md-block d-lg-none">помещения:</h4>
+					<div class="service-price-value">{{site.price-interior-commerce}}</div>
+					<p>Помещения - от 40 м2</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center service-price-ps">
+				<div class="col-md-10">
+					<p class="service-price-ps-p">* Стоимость дизайн-проекта при меньших площадях можно уточнить по телефону <a style="display:inline-block" href="tel:89171180270">{{site.telephone}}</a>.</p>
+					<p class="service-price-ps-p">* Для помещений с большой площадью действует система скидок.</p>
+					<p class="service-price-ps-p">* Срок выполнения дизайн-проекта зависит от общей площади помещения, его стилистики и времени согласования каждого этапа.</p>
+					<p class="service-price-ps-p">В случае нахождения объекта за пределами г. Самары, но на территории Самарской области в пределах 100 км от г. Самара, действует система доплаты по договоренности.</p>
+					<div class="service-price-button">
+						<a href="/portfolio/" class="ref-button-black">Посмотреть портфолио</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="service-compos">
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center">
+					<h3>Состав <br class="d-md-none">дизайн-проекта:</h3>
+				</div>
+				<div class="col-md-10">
+					<ul>
+						<li>1. План обмера</li>
+						<li>2. План демонтажа конструкций</li>
+						<li>3. План монтажа конструкций</li>
+						<li>4. План расстановки мебели</li>
+						<li>5. План расстановки сантехники</li>
+						<li>6. План напольного покрытия</li>
+						<li>7. План уровня пола (если предусмотрено несколько уровней полов или перепад высот напольного покрытия)</li>
+						<li>8. План теплых полов и отопления</li>
+						<li>9. План размещения розеток и электровыводов</li>
+						<li>10. План размещения осветительных приборов</li>
+						<li>11. План подключения осветительных приборов</li>
+						<li>12. План уровня потолка (если предусмотрено несколько уровней потолка или перепад высот потолочного покрытия)</li>
+						<li>13. План потолочного покрытия</li>
+						<li>14. Развертки по стенам</li>
+						<li>15. Схема узлов сложных конструкций (если такие присутствуют)</li>
+						<li>16. 3D-визуализация</li>
+						<li>17. Подбор материалов, мебели, светильников</li>
+						<li>18. Таблица по комплектации выбранными материалами</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="service-steps">
+			<div class="container-fluid service-steps-container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h3>Этапы работы:</h3>
+					</div>
+				</div>
+			</div>
+
+{% include /service-steps.html %}			
+			
+		</section>
+
+{% include /footer.html %}
