@@ -1,0 +1,321 @@
+@import "vars"
+
+/*==========  Desktop First  max-width ==========*/
+
+// ≤1200px
++media-breakpoint-down(lg)
+	//=========  Main =============
+  //=========  About us =========
+  //=========  Services =========
+  //=========  Portfolio ========
+  //=========  Contacts =========
+
+// ≤992px
++media-breakpoint-down(md)
+	//.container-fluid
+		//padding-left: $gutter/2
+		//padding-right: $gutter/2
+	//=========  Footer =============
+	.footer
+		&-name
+			font-size: 14px
+		&-contact
+			font-size: 13px
+		.logo-img
+			svg
+				height: 140px
+				width: auto
+		&-requisites
+			font-size: 12px
+	//=========  Main =============
+	.main-care
+		&-item-h
+			font-size: 52px
+			line-height: 1.7
+		&-item-second
+			margin-top: 0
+		.overlay	
+			height: 400px
+	
+
+  //=========  About us =========
+	// .about-team-dasha
+	// 	.about-team
+	// 		&-image
+	// 			display: block
+	// 		&-contact
+	// 			margin: 0
+	// 			display: block
+
+  //=========  Services =========
+
+  //=========  Portfolio ========
+  //=========  Contacts =========
+
+// ≤768px
++media-breakpoint-down(sm)
+	//=========  Main =============
+	.header-letters
+		ul
+      > li
+        img
+          height: 96px
+	.service-price.interior 
+		h4
+			margin-top: 60px
+	.main-services-item
+		p
+			margin: 30px 0 0
+	.main-services-second
+		h4
+			text-align: center
+			margin-bottom: 32px
+		p			
+			margin: 30px 0 0
+			//padding: 0 30px 0	
+		.main-services-button
+			margin: 30px 0 0
+			a
+				position: inherit
+		.main-services-item-image
+			img
+				margin: 0
+				height: 300px
+			.overlay-img-white
+				line-height: 300px
+		&-item
+			&-workshop
+				.main-services-second-item-text					
+					padding: 0					
+			&-repair
+				margin-top: 60px
+				.main-services-second-item-text
+					padding: 0
+	.footer
+		&-requisites
+			margin-top: 60px
+
+  //=========  About us =========
+	.about-team //, .about-team-dasha>.about-team
+		&-image
+				display: inline-block
+		&-contact
+			margin-left: 20px
+			display: inline-block
+			vertical-align: baseline
+		&-descript
+			width: 100%
+
+  //=========  Services =========
+	// .services-image-img
+	// 	//width: auto
+	// 	margin: 60px auto 0
+	.services
+		//margin-top: 40px
+		.about-h
+			margin-bottom: 0
+	.services, .services-other
+		h4
+			text-align: center
+			margin-top: 30px
+		.services-item
+			margin-top: 80px
+		// p
+		// 	margin-top: 20px
+	.services-button, .services-other .services-button
+		text-align: center
+		margin-top: 30px
+	
+  //=========  Portfolio ========
+	.portfolio
+		$portgolio-gutter: $gutter
+		&-list
+			margin-left: - $portgolio-gutter / 2
+			margin-right: - $portgolio-gutter / 2
+		&-item
+			padding: $portgolio-gutter / 2
+	//=========  Project page =========
+	.project
+		&-decript
+			padding-left: 20px
+			padding-right: 20px
+			p
+				margin-top: $gutter
+			h3
+				text-align: center
+		&-image
+			margin: 10px 0
+  //=========  Contacts =========
+	.contacts-img
+		&-frame
+			margin-left: auto
+			margin-right: auto
+			right: 0
+			left: 0
+	//=========  УСЛУГА одна  =========
+	.service-descript
+		padding-top: 30px
+	.service-steps
+		&-ps
+			margin: 60px 0 0
+	//=========  Design interior =========
+
+
+
+// ≤576px
++media-breakpoint-down(xs)
+	$top-line-height-xs: 60px
+	body
+		padding-top: $top-line-height-xs
+	h1, h2, .main-services h2
+		font-size: 40px
+		text-align: center
+	.top-line
+		height: $top-line-height-xs
+	.logo
+		line-height: $top-line-height-xs
+		img
+			height: 40px
+			width: auto
+	.hamburger
+		line-height: $top-line-height-xs - 8px
+		padding: 6px 15px 0
+	.header-letters
+		ul
+			li
+				img
+					height: 50px	
+	
+	.service-steps.main-steps
+		h2
+			text-align: center
+
+	.main-services-item-image
+		img
+			height: 300px
+		.overlay-img-white
+				line-height: 300px
+	.main-care
+		&-item-h
+			font-size: 40px
+	.footer
+		&-name
+			font-size: 15px
+		&-contact
+			font-size: 12px
+		.logo-img
+			svg
+				height: 110px
+				width: auto
+		&-requisites
+			font-size: 12px
+		.gutter-custom
+			padding: 0 10px
+
+			
+  //=========  About us =========
+	.about-team, .about-team-dasha>.about-team
+		&-image
+				margin: 40px auto 0
+				display: block
+		&-contact
+			text-align: center
+			margin-left: 0
+			display: block
+		&-number-line
+			margin: 10px auto 0
+			//vertical-align: baseline
+  //=========  Services =========
+  //=========  Portfolio ========
+	.portfolio
+		&-tooltip
+			text-align: center
+		&-image
+			padding-top: 75%
+		//&-button-group
+		//	text-align: center
+	
+  //=========  Contacts =========
+	.contacts-application
+		&-text
+			font-size: 22px
+
+@media screen and (max-width: 359px)
+	h1, h2
+		font-size: 36px
+	.main-section
+		height: 300px
+	.header-letters
+		ul
+			li
+				img
+					height: 42px
+	.main-services-item-image
+		img
+			height: 240px
+		.overlay-img-white
+				line-height: 240px
+	.main-services-second
+		.main-services-item-image
+			img
+				height: 240px
+			.overlay-img-white
+				line-height: 240px
+	.main-care
+		&-item-h
+			font-size: 36px
+	//=========  УСЛУГА одна  =========
+	.service-steps-item
+		$number-size-xs: 40px
+		&-no
+			width: $number-size-xs
+			height: $number-size-xs
+			&-txt
+				line-height: $number-size-xs - 2px
+		&-text
+			width: 250px
+		&-head
+			width: 250px
+			h4
+				&::after
+					width: 210px
+		&-space
+			width: $number-size-xs
+/*==========  Mobile First  min-wdth ==========*/
+
+// ≥576px
++media-breakpoint-up(sm)
+	//=========  Main =============
+  //=========  About us =========
+  //=========  Services =========
+  //=========  Portfolio ========
+  //=========  Contacts =========
+
+// ≥768px
++media-breakpoint-up(md)
+	//=========  Main =============
+  //=========  About us =========
+  //=========  Services =========
+	.services-descript
+		padding-left: 40px
+	.services-other
+		p
+			padding-right: 40px
+  //=========  Portfolio ========
+  //=========  Contacts =========
+
+// ≥992px
++media-breakpoint-up(lg)
+	//=========  Main =============
+  //=========  About us =========
+  //=========  Services =========
+  //=========  Portfolio ========
+  //=========  Contacts =========
+
+// ≥1200px
++media-breakpoint-up(xl)
+	//=========  Main =============
+  //=========  About us =========
+  //=========  Services =========
+  //=========  Portfolio ========
+  //=========  Contacts =========

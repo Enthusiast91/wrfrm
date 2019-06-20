@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /*?
+Disallow: /google1dc1a9b80d9e1641.html
+Host: https://wrfrm.com
+Sitemap: https://wrfrm.com/sitemap.xml

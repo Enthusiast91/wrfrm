@@ -1,0 +1,35 @@
+<header class="top-line">
+
+	<div class="row justify-content-between">
+		<div class="col-sm-auto">
+			<a href="{{ site.baseurl }}" class="logo"> 
+				<img src="img/logo/logo.svg" alt="СТУДИЯ АРХИТЕКТУРЫ И ДИЗАЙНА">
+			</a>
+		</div>
+
+		<div class="col-lg-auto d-none d-lg-block">
+			<nav class="main-menu">
+				
+				{% include /main-menu.html %}
+
+			</nav>
+		</div>
+
+		<div class="hamburger-wrap d-lg-none">
+			<a class="hamburger hamburger--collapse">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</a>
+		</div>
+
+		<div class="col-12 d-lg-none">
+			<nav class="dropdown-menu">
+
+					{% include /main-menu-mobile.html %}
+
+			</nav>
+		</div>
+
+	</div>
+</header>

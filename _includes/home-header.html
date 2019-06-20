@@ -1,0 +1,78 @@
+<header class = "main-header" >
+	<div class="main-header-background" style="background-image: url(img/header-img.jpg)"></div>
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+
+			<div class="col-auto">
+				<div class="header-letters">
+					<ul class="header-letters-wright">
+						<li><img src="img/letters/W.svg" alt="W"></li>
+						<li><img src="img/letters/R.svg" alt="R"></li>
+						<li><img src="img/letters/I.svg" alt="I"></li>
+						<li><img src="img/letters/G.svg" alt="G"></li>
+						<li><img src="img/letters/H.svg" alt="H"></li>
+						<li><img src="img/letters/T.svg" alt="T"></li>
+					</ul>
+					<ul class="header-letters-form">
+						<li><img src="img/letters/F.svg" alt="F"></li>
+						<li><img src="img/letters/O.svg" alt="O"></li>
+						<li><img src="img/letters/R.svg" alt="R"></li>
+						<li><img src="img/letters/M.svg" alt="M"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<form id="main-header-application" name="header-application">
+			<div id="main-header-application-submit" class="row">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="wrfrm.com">
+				<input type="hidden" name="admin_email" value="office@wrfrm.com">
+				<input type="hidden" name="form_subject" value="Заявка, форма захвата: Главная">
+				<!-- END Hidden Required Fields -->
+
+				<div class="col-12 col-md text-center gutter-custom">
+					<input
+							id="zayavkaName"
+							name="Name"
+							placeholder="Введите имя"
+							onfocus="if (this.value == '') {
+									this.placeholder=''
+									}"
+									onBlur="if (this.value == '') {
+											this.placeholder='Введите имя'
+											}"
+							required />
+				</div>
+
+				<div class="col-12 col-md text-center gutter-custom">
+					<input
+							id="applicationTelephone"
+							name="Phone"
+							type="Tel"
+							placeholder="Введите номер"
+							onfocus="if (this.value == '') {
+									this.placeholder=''
+									}"
+									onBlur="if (this.value == '') {
+											this.placeholder='Введите номер'
+											}"
+							pattern = "^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+							required/>
+				</div>
+
+				<div class="col-12 col-md text-center gutter-custom">
+					<button class="main-header-button-submit button-black" type="submit" form="main-header-application"> Заказать звонок </button>
+				</div>
+
+			</div>
+
+			<div id="main-header-application-thanks" class="row" style="display:none"> <!--style="display:none"-->
+				<div class="col gutter-custom">
+					<button class="main-header-button-thanks button-black" type="button"> Спасибо! Мы скоро Вам перезвоним! </button>
+				</div>
+			</div>
+		</form>
+
+	</div>
+</header>

@@ -1,0 +1,100 @@
+{% include /header-page.html %}
+
+{% include /top-line.html %}
+
+	<section class="contacts">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<h1>Наши<br>контакты</h1>
+				</div>
+			</div>
+	
+			<div class="row">
+				<div class="col">
+					<div class="contacts-img" style="background-image: url(img/team/team2.jpg);">
+						<div class="contacts-img-frame">
+							<ul>
+								<li class="contacts-logo"> 
+									<a href="/"><img src="img/logo/logo_vert.svg" alt="WRIGHTFORM. СТУДИЯ АРХИТЕКТУРЫ И ДИЗАЙНА"></a>
+								</li>
+								<li>Тел.:</li>
+								<li>
+									<a href="tel:+79171180270">+7(917)-118-02-70</a>
+								</li>
+								<li>
+									<a href="tel:+79277460111">+7(927)-746-01-11</a>
+								</li>
+								<li class="contacts-email">E-mail:</li>
+								<li>
+									<a href="mailto:office@wrfrm.com">office@wrfrm.com</a>
+								</li>
+								<li class="contacts-city">Самара
+									<br>Санкт-Петербург</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<form id="contacts-application" name="contacts-application">
+				<div id="contacts-application-submit">
+					<div class="row align-items-center">
+						<!-- Hidden Required Fields -->
+						<input type="hidden" name="project_name" value="wrfrm.com">
+						<input type="hidden" name="admin_email" value="office@wrfrm.com">
+						<input type="hidden" name="form_subject" value="Заявка, форма захвата : Контакты">
+						<!-- END Hidden Required Fields -->
+	
+						<div class="col-md-6">
+							<div class="contacts-application-text">
+								Заполните форму<br>и мы свяжемся с вами<br>в ближайшее время
+							</div>
+						</div>
+	
+						<div class="col-12 col-md-5">
+							<ul class="contacts-application-input">
+								<li>
+									<input id="contacts-application-Name" name="Name" placeholder="Введите имя *" onfocus="if (this.value == '') {
+																								this.placeholder=''
+																								}" onBlur="if (this.value == '') {
+																										this.placeholder='Введите имя *'
+																										}" required />
+								</li>
+								<li>
+									<input id="contacts-application-Email" name="Mail" type="Email" placeholder="Введите Email *" onfocus="if (this.value == '') {
+																								this.placeholder=''
+																								}" onBlur="if (this.value == '') {
+																										this.placeholder='Введите Email *'
+																										}" required />
+								</li>
+								<li>
+									<input id="contacts-application-Telephone" name="Phone" type="Tel" placeholder="Введите номер" onfocus="if (this.value == '') {
+																								this.placeholder=''
+																								}" onBlur="if (this.value == '') {
+																										this.placeholder='Введите номер'
+																										}" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
+								</li>
+							</ul>
+						</div>
+	
+					</div>
+	
+					<div id="contacts-application-ok" class="row">
+						<div class="col-md-5 offset-md-6 text-center">
+							<button class="contacts-application-button-ok button-black" type="submit" form="contacts-application"> ОК </button>
+						</div>
+					</div>
+	
+					<div id="contacts-application-thanks" class="row" style="display:none">
+						<div class="col-md-5 offset-md-6">
+							<button class="contacts-application-button-thanks button-black" type="button"> Спасибо! Мы скоро Вам ответим! </button>
+						</div>
+					</div>
+				</div>
+	
+			</form>
+		</div>
+	</section>
+
+{% include /footer.html %}

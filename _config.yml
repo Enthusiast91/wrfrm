@@ -1,0 +1,96 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+encoding: utf-8
+title: Дизайн интерьера и Архитектурное проектирование в Самаре и Санкт-Петербурге от студии дизайна WRIGHT FORM
+name: WrightForm
+email: your-email@example.com
+description: 'У нас вы можете ознакомиться с портфолио и заказазать: Дизайна интерьера, Ремонт под ключ, Архитектурное проектирование и Декорирование'
+keywords: дизайн интерьера, студия дизайна, студия дизайна интерьера, ремонт под ключ, архитектурный проект, декорирование, wrightform, райтформ, самара, Санкт-Петербург, СПБ
+
+themecolor: '#333'
+imagehome: img/header-img.jpg
+url: 'https://wrfrm.com'
+baseurl: '/' # the subpath of your site, e.g. /blog
+
+# plugins: [jekyll-paginate-v2]
+# category_dir: portfolio
+# pagination:
+#   enable: true 
+#   per_page: 100
+#   title: ':title - Страница :num'
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
+#   trail: 
+#     before: 2
+#     after: 2
+
+exclude: ['node_modules', 'gulpfile.js', 'package.json', 'package-lock.json', js/common.js, 'npm-debug.log', '**/Thumbs.db', 'libs', 'sass', '**/*.DS_Store']
+
+
+soc:
+  <a class="social-link-circle-light" href="https://vk.com/wrightform" rel="nofollow" target="_blank">
+    <span class="fa fa-vk"></span>
+  </a>
+  <a class="social-link-circle-light social-link-instagram" href="https://www.instagram.com/wrightform_architect/" rel="nofollow" target="_blank">
+    <span class="fa fa-instagram"></span>
+  </a>
+
+vk: https://vk.com/wrightform
+instagram: https://www.instagram.com/wrightform_architect/
+facebook: https://www.facebook.com/wrfrm/
+
+copyright: Копирование контента и размещение на других сайтах запрещено.
+
+telephone: +7 (917) 118-02-70
+telephone-second: +7 (927) 746-01-11
+
+price-interior: от 1800 р/м2
+price-interior-commerce: от 1200 р/м2
+price-architecture: от 1400 р/м2
+pice-build: от 5<sup> </sup>000 р/м2
+price-visualisation: от 700 р/м2
+price-supervision: от 28<sup> </sup>000 р/мес
+price-consultation: от 7<sup> </sup>000 р
+price-decor: от 700 р/м2
+
+url-interior: uslugi/dizajn-interera/
+url-architecture: uslugi/arkhitekturnyj-proekt/
+url-build: uslugi/remont-pod-klyuch/
+url-visualisation: uslugi/3d-vizualizaciya/
+url-supervision: uslugi/avtorskij-nadzor/
+url-consultation: uslugi/konsultaciya/
+url-decor: uslugi/dekorirovanie/
+
+image-interior: images/dizajn-interera/2018-06-29-kvartira-dvukhkomnatnaya-72-kv-m-zhk-favorit/1.jpg
+image-architecture: img/main/2-arkhitekturnyj-proekt.jpg
+image-build: img/main/4-remont-pod-klyuch.jpg
+image-visualisation: img/main/6-dizajn-interera.jpg
+image-supervision: img/main/7-avtorskij-nadzor.jpg
+image-consultation: img/main/8.jpg
+image-decor: img/main/3-dekorirovanie.jpg
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

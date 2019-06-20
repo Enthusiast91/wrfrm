@@ -1,0 +1,110 @@
+{% include /header-page.html %}
+
+{% include /top-line.html %}
+
+	<section class="services">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<h1 class="about-h">Наши услуги</h1>
+				</div>
+			</div>
+
+{% include /usluga-type-one.html
+url=site.url-interior
+image=site.image-interior
+image-alt='Дизайн интерьера частных, коммерческих и общественных помещений'
+price=site.price-interior-commerce
+header-text='Дизайн <br class="d-none d-md-block">интерьера'
+description-text='Грамотно созданный дизайн интерьера способен качественно обыграть любое помещение, сделать его функционально
+продуманным и облегчить работу при ремонте. Более того, хороший дизайн не только преображает общее пространство, но он качественно
+улучшает саму жизнь.' %}
+
+{% include /usluga-type-one.html
+url=site.url-architecture
+image=site.image-architecture
+image-alt='Архитектурный проект частных домов, коттеджей, конструкций и сооружений'
+price=site.price-architecture
+header-text='Архитектурный <br class="d-none d-md-block">проект'
+description-text='Индивидуальное проектирование домов и коттеджей - это замечательная возможность выразить свою индивидуальность
+в нестандартной архитектурной форме, исходя из потребностей и пожеланий вашей семьи.' %}
+
+		</div>
+	</section>
+
+	<section class="services-other">
+		<div class="container-fluid">
+
+{% include /usluga-type-two.html
+class-name='build'
+url=site.url-build
+image=site.image-build
+image-alt='Ремонт под ключ'
+price=site.pice-build
+header-text='Ремонт <br class="d-none d-md-block">под ключ'
+description-text='Наши квалифицированные специалисты смогут воплотить задуманный проект в реальную жизнь. Достигнутое взаимопонимание
+на опыте прошлых реализованных проектов значительно упрощает и ускоряет процесс работы.' %}
+
+{% include /usluga-type-two.html
+class-name='visualization'
+url=site.url-visualisation
+image=site.image-visualisation
+image-alt='3D визуализация дизайна интерьера, коттеджей и архитектурных сооружений'
+price=site.price-visualisation
+header-text='3D <br class="d-none d-md-block">визуализация'
+description-text='3D - визуализация позволяет увидеть замысел дизайнера максимально приближенно к реальности. Визуализация
+незаменима для отработки идеи дизайна, если нужно четко видеть пространство, пропорции, конкретные выбранные материалы, мебель,
+светильники «внутри помещения».' %}
+					
+{% include /usluga-type-two.html
+url=site.url-supervision
+image=site.image-supervision
+image-alt='Авторский надзор. Стоимость и что входит в авторский надзор'
+price=site.price-supervision
+header-text='Авторский <br class="d-none d-md-block">надзор'
+description-text='Авторский надзор позволяет быть уверенным, что все будет реализовано так, как согласовано в проекте. При
+этом он позволяет избавиться от "головной боли" самостоятельного контроля работ по проекту и вовремя выявить ошибки рабочих.'
+%}
+
+{% include /usluga-type-two.html
+url=site.url-consultation
+image=site.image-consultation
+image-alt="Консультация по дизайну интерьера. Стоимость и состав консультации"
+price=site.price-consultation
+header-text="Консультация" 
+description-text="Консультация позволяет получить профессиональную помощь и советы от дизайнера, если вы решили самостоятельно
+продумывать интерьер или выбираете новое жилье." %}
+
+{% include /usluga-type-two.html 
+url=site.url-decor
+image=site.image-decor
+image-alt="Декорирование интерьера. Стоимость и состав услуги декорирования" 
+price=site.price-decor
+header-text="Декорирование" 
+description-text="Декорирование позволяет вдохнуть жизнь в интерьер, создать уютную и приятную атмосферу и расставляя правильные акценты в интерьере преподнести пространство с лучшей стороны." %}
+
+		</div>
+	</section>
+
+{% include /scroll-top.html %}
+
+{% include /footer.html %}
+
+<!-- 
+{% include /usluga-type-one.html
+class-name=''
+url=''
+image=''
+image-alt=''
+price=''
+header-text=''
+description-text='' %} -->
+
+<!-- 
+{% include /usluga-type-two.html 
+url=''
+image=''
+image-alt=''
+price=''
+header-text=''
+description-text='' %} -->

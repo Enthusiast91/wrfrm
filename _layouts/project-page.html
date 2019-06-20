@@ -1,0 +1,48 @@
+{% include /header-page.html %}
+
+{% include /top-line.html %}
+
+	<header class="project-header"></header>
+	
+	<section class="project">
+	
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-sm-12">
+					<div class="project-decript"> 
+						<div class="row">
+
+{% assign class = "col-12" %}
+{% if page.header-p.size > 0 %}
+{% assign class = "col col-md-5 col-lg-4" %}
+{% endif %}
+
+							<div class="{{ class }} project-decript-header">
+								<h3>{{ page.header-h }}</h3>
+							</div>
+							<div class="col-12 col-md offset-lg-1 align-self-center project-decript-paragraph">
+								<p class="project-decript-paragraph-content">{{ page.header-p }}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-back">
+			<div class="container-fluid">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-12">
+						<div class="project-content">
+{{ content }}
+						</div>						
+					</div>
+				</div>
+			</div>	
+		</div>
+	
+	</section>
+
+{% include /scroll-top.html %}
+
+{% include /footer.html %}

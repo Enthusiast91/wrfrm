@@ -1,0 +1,28 @@
+<div class="services-item  {{ include.class-name }}"> 
+	<div class="row no-gutters">
+		<div class="col-md-6">
+			<a href="{{ include.url }}">
+				<div class="services-image">
+					<img class="services-image-img" src="{{ include.image }}" alt="{{ include.image-alt }}">
+					<div class="overlay-img-white">{{ include.price }}</div>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-6 order-md-first">
+			<div class="row">
+				<div class="col-12 col-md-5">
+					<h4>{{ include.header-text }}</h4>
+				</div>
+				<div class="col-12 order-md-3">
+					<p>{{ include.description-text }}
+					</p>
+				</div>
+				<div class="col align-self-center order-md-2">
+					<div class="services-button">
+						<a href="{{ include.url }}" class="ref-button-light">Подробнее</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
