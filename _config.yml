@@ -58,14 +58,16 @@ copyright: Копирование контента и размещение на 
 telephone: +7 (917) 118-02-70
 telephone-second: +7 (927) 746-01-11
 
-price-interior: от 1800 р/м2
-price-interior-commerce: от 1200 р/м2
-price-architecture: от 1400 р/м2
+price-interior: 1500 р/м2
+price-interior-full: 1800 р/м2
+price-interior-commerce: 900 р/м2
+price-interior-commerce-full: 1200 р/м2
+price-architecture: 1400 р/м2
 pice-build: от 5<sup> </sup>000 р/м2
-price-visualisation: от 700 р/м2
-price-supervision: от 28<sup> </sup>000 р/мес
-price-consultation: от 7<sup> </sup>000 р
-price-decor: от 700 р/м2
+price-visualisation: 700 р/м2
+price-supervision: 28<sup> </sup>000 р/мес
+price-consultation: 7<sup> </sup>000 р
+price-decor: 700 р/м2
 
 url-interior: uslugi/dizajn-interera/
 url-interior-commerce: uslugi/dizajn-interera-kommercheskij/
@@ -85,7 +87,6 @@ image-supervision: img/main/7-avtorskij-nadzor.jpg
 image-consultation: img/main/8.jpg
 image-decor: img/main/3-dekorirovanie.jpg
 
-qqq: QQQ
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
