@@ -387,10 +387,16 @@ button
 				left: 1px
 				right: 0
 
-.service-compos
+.service-scope
 	padding-top: 80px
 	h3
 		margin: 0 0 40px
+	h4
+		display: inline-block
+		//width: auto
+		padding-bottom: 6px
+		margin-bottom: 20px
+		border-bottom: 1px solid $button-black
 	ul li
 		font-family: 'Open Sans', sans-serif 
 		line-height: 2
@@ -749,7 +755,6 @@ button
 	// 	right: 0
 	// 	bottom: 0
 	// 	opacity: 0.48
-
 //============ Main Steps work ============
 
 .service-steps.main-steps
@@ -1010,12 +1015,39 @@ button
 			font-style: italic
 
 .service-price.interior
-	// h3
-	// 	margin-bottom: 0
-	h4
-		margin-top: 10px
+	h3
+		margin-bottom: 60px
 	.service-price-figure
 		margin-top: 60px
+
+//============ Decorativ Corners ============
+$cornerLength: 30px
+$cornerDepth: 2px
+
+
+.corner-block
+	display: inline-block
+	position: relative
+	
+.corner-up
+	position: absolute
+	height: $cornerLength
+	width: $cornerLength  
+	border-left: $cornerDepth solid $button-black
+	border-top: $cornerDepth solid $button-black
+	left: -10px
+	top: -10px
+	
+.corner-down
+	position: absolute
+	height: $cornerLength
+	width: $cornerLength
+	border-right: $cornerDepth solid $button-black
+	border-bottom: $cornerDepth solid $button-black
+	right: -20px
+	bottom: -20px
+//================================= END Decorativ Corners =================================
+
 //================================= END Design Interior Page ======================
 
 
@@ -1051,7 +1083,7 @@ button
 		&-ps
 			margin-top: 60px
 			margin-bottom: -20px
-.service-compos.supervision
+.service-scope.supervision
 	h3
 		margin: 0
 	h4
@@ -1059,7 +1091,7 @@ button
 		padding-bottom: 6px
 		margin: 40px 0 20px
 		border-bottom: 1px solid $button-black
-	.service-compos
+	.service-scope
 		&-h4
 		text-align: center
 		&-ps
