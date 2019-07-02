@@ -4,7 +4,7 @@
 
 ::placeholder
 	color: #666
-
+ 
 ::selection
 	background-color: $accent
 	color: #fff
@@ -1102,6 +1102,7 @@ $cornerDepth: 2px
 
 
 //================================= Portfolio Page ================================
+
 .portfolio
 	&-header
 		padding-top: 60px
@@ -1169,6 +1170,25 @@ $cornerDepth: 2px
 					white-space: nowrap
 					transform: translate(-50%, -50%)
 
+$size: 18px
+$indent: 20px
+$depthBorder: 2px
+$gapBorder: 2px
+.portfolio-image-img-overlay-square
+	position: absolute
+	height: $size
+	width: $size
+	background-color: rgba(255, 255, 255, 0.9)
+	top: $indent
+	right: $indent
+	&-border
+		position: absolute
+		height: $size
+		width: $size
+		border-right: $depthBorder solid rgba(255, 255, 255, 0.9)
+		border-bottom: $depthBorder solid rgba(255, 255, 255, 0.9)
+		top: $indent + $gapBorder + $depthBorder
+		right: $indent - ($gapBorder + $depthBorder)
 //================================= END Portfolio Page ============================
 
 
