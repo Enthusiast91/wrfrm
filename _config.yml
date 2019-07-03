@@ -98,6 +98,8 @@ image-decor: img/main/3-dekorirovanie.jpg
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+jivosite-widget: '<script src="//code-ru1.jivosite.com/widget.js" jv-id="uHADwec4Ko" async></script>'
+
 yandex-dialog-widget: "<script type='text/javascript'>
 (function () {
     window['yandexChatWidgetCallback'] = function() {
