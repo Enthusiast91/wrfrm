@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 encoding: utf-8
-title: Дизайн интерьера и Архитектурное проектирование в Самаре и Санкт-Петербурге от студии дизайна WRIGHT FORM
+title: Дизайн интерьера и Архитектурное проектирование в Санкт-Петербурге и Самаре от студии дизайна WRIGHT FORM
 name: WrightForm
-email: your-email@example.com
+email: office@wrfrm.com
 description: 'У нас вы можете ознакомиться с портфолио и заказазать: Дизайна интерьера, Ремонт под ключ, Архитектурное проектирование и Декорирование'
 keywords: дизайн интерьера, студия дизайна, студия дизайна интерьера, ремонт под ключ, архитектурный проект, декорирование, wrightform, райтформ, самара, Санкт-Петербург, СПБ
 

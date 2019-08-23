@@ -927,6 +927,13 @@ button
 //================================= Contacts Page =================================
 .contacts
 	padding-top: 60px
+	.privacy-policy
+		margin-top: 5px
+		a
+			font-size: 12px
+			color: $contact-text-policy-color
+			&:hover
+				color: lighten($contact-text-policy-color,30%)
 
 .contacts-img
 	position: relative
@@ -988,7 +995,7 @@ button
 			input
 				width: 100%
 	&-button-ok
-		width: 150px
+		width: 200px
 		height: 40px
 		border: 1px solid $button-black
 	&-button-thanks
@@ -1234,5 +1241,24 @@ $gapBorder: 2px
 		background-color: #fff
 
 //================================= END Project Page ==============================
+
+
+
+//================================= Policy Page ===================================
+.politics
+	padding-top: 60px
+	padding-bottom: 20px
+	ol
+		font-family: 'Open Sans', sans-serif
+	li
+		font-family: 'Open Sans', sans-serif
+	h3
+		padding-bottom: 20px
+	h4
+		padding-top: 40px
+		padding-bottom: 20px
+	p
+		padding-bottom: 10px
+//================================= END Policy Page ===============================
 
 @import "media" // Всегда в конце
