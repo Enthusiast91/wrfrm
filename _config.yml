@@ -57,17 +57,19 @@ copyright: Копирование контента и размещение на 
 
 telephone: +7 917 118-02-70
 telephone-second: +7 927 746-01-11
+phone-href: 'tel:+79171180270'
+phone-second-href: 'tel:+79277460111'
 
-price-interior: 1500 р/м2
-price-interior-full: 1800 р/м2
-price-interior-commerce: 900 р/м2
-price-interior-commerce-full: 1200 р/м2
-price-architecture: 1400 р/м2
-pice-build: от 5<sup> </sup>000 р/м2
+price-interior: 1900 р/м2
+price-interior-full: 2200 р/м2
+price-interior-commerce: 1200 р/м2
+price-interior-commerce-full: 1500 р/м2
+price-architecture: 1800 р/м2
+pice-build: от 12<sup> </sup>000 р/м2
 price-visualisation: 700 р/м2
 price-supervision: 28<sup> </sup>000 р/мес
-price-consultation: 7<sup> </sup>000 р
-price-decor: 700 р/м2
+price-consultation: 9<sup> </sup>000 р
+price-decor: 1000 р/м2
 
 url-interior: uslugi/dizajn-interera/
 url-interior-commerce: uslugi/dizajn-interera-kommercheskij/
@@ -86,6 +88,8 @@ image-visualisation: img/main/6-dizajn-interera.jpg
 image-supervision: img/main/7-avtorskij-nadzor.jpg
 image-consultation: img/main/8.jpg
 image-decor: img/main/3-dekorirovanie.jpg
+
+txt-payment-for-travel-outside: В случае нахождения объекта за пределами КАД действует система доплаты за выезд.
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
