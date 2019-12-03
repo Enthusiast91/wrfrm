@@ -38,8 +38,10 @@ baseurl: '/' # the subpath of your site, e.g. /blog
 #     before: 2
 #     after: 2
 
-exclude: ['node_modules', 'gulpfile.js', 'package.json', 'package-lock.json', js/common.js, 'npm-debug.log', '**/Thumbs.db', 'libs', 'sass', '**/*.DS_Store']
+gems:
+  - jekyll-liquify
 
+exclude: ['node_modules', 'gulpfile.js', 'package.json', 'package-lock.json', js/common.js, 'npm-debug.log', '**/Thumbs.db', 'libs', 'sass', '**/*.DS_Store']
 
 soc:
   <a class="social-link-circle-light" href="https://vk.com/wrightform" rel="nofollow" target="_blank">
@@ -103,6 +105,7 @@ txt-payment-for-travel-outside: В случае нахождения объек�
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 jivosite-widget: '<script src="//code-ru1.jivosite.com/widget.js" jv-id="uHADwec4Ko" async></script>'
 
 yandex-dialog-widget: "<script type='text/javascript'>
