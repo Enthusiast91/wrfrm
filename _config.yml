@@ -38,10 +38,10 @@ baseurl: '/' # the subpath of your site, e.g. /blog
 #     before: 2
 #     after: 2
 
-gems:
+plugins:
   - jekyll-liquify
 
-exclude: ['node_modules', 'gulpfile.js', 'package.json', 'package-lock.json', js/common.js, 'npm-debug.log', '**/Thumbs.db', 'libs', 'sass', '**/*.DS_Store']
+exclude: ['node_modules', 'gulpfile.js', 'package.json', 'package-lock.json', js/common.js, 'npm-debug.log', 'README.md', '**/Thumbs.db', 'libs', 'sass', '**/*.DS_Store']
 
 soc:
   <a class="social-link-circle-light" href="https://vk.com/wrightform" rel="nofollow" target="_blank">
@@ -63,15 +63,15 @@ telephone-third: +7 927 746-01-11
 phone-href: 'tel:+79312459501'
 phone-second-href: 'tel:+79171180270'
 
-price-interior: 1900 р/м2
-price-interior-full: 2200 р/м2
-price-interior-commerce: 1200 р/м2
-price-interior-commerce-full: 1500 р/м2
+price-interior: 2200 р/м2
+price-interior-full: 2500 р/м2
+price-interior-commerce: 1500 р/м2
+price-interior-commerce-full: 1800 р/м2
 price-architecture: 1800 р/м2
 pice-build: от 12<sup> </sup>000 р/м2
 price-visualisation: 700 р/м2
 price-supervision: 28<sup> </sup>000 р/мес
-price-consultation: 9<sup> </sup>000 р
+price-consultation: 7<sup> </sup>000 р
 price-decor: 1000 р/м2
 
 url-interior: uslugi/dizajn-interera/

@@ -26,7 +26,7 @@ $(function () {
 						guid: '13deb08e-3a96-4722-8b80-6b136e807eec',
 						buttonText: 'Напишите нам, мы онлайн!',
 						title: 'Чат',
-						theme: 'dark',
+						theme: 'light',
 						collapsedDesktop: 'hover',
 						collapsedTouch: 'always'
 					});
@@ -239,6 +239,11 @@ $(function () {
 				});
 			}
 		}
+	});
+
+	//------------------------------------ Twenty Twenty -----------------------------------------
+	$('.project-image').imagesLoaded( function() {
+		$('.project-image-container').twentytwenty();
 	});
 
 	//------------------------------------ Настройка контента на странице проекта --------------------

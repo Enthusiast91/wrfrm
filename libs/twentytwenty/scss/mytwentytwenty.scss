@@ -1,0 +1,32 @@
+.twentytwenty-handle {
+	background: #fff;
+}
+
+.twentytwenty-left-arrow {
+	display: block;
+	width: 8px;
+	height: 8px;
+	top: 50%;
+	border: none;
+	margin: 0;
+	left: 5px;
+	margin-top: -3px;
+	border-bottom: 2px inset #010101;
+	position: absolute;
+	border-right: 2px inset #010101;
+	transform: rotate(134deg) translate(-25%,-9%);
+}
+
+.twentytwenty-right-arrow {
+	width: 8px;
+    height: 8px;
+    top: 50%;
+    border: none;
+    margin: 0;
+    right: 9px;
+    margin-top: -3px;
+    border-top: 2px inset #010101;
+    border-left: 2px inset #010101;
+    transform: rotate(134deg) translate(-25%,-9%);
+    position: absolute;
+}
