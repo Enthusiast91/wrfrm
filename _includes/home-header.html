@@ -1,5 +1,6 @@
-<header class = "main-header" >
+<header class = "main-header">
 	<div class="main-header-background" style="background-image: url(img/header-img.jpg)"></div>
+	<div class="main-header-background-overlay"></div>
 	<div class="container-fluid">
 		<div class="row justify-content-center">
 
@@ -22,57 +23,17 @@
 				</div>
 			</div>
 		</div>
-		
-		<form id="main-header-application" name="header-application">
-			<div id="main-header-application-submit" class="row">
-				<!-- Hidden Required Fields -->
-				<input type="hidden" name="project_name" value="wrfrm.com">
-				<input type="hidden" name="admin_email" value="office@wrfrm.com">
-				<input type="hidden" name="form_subject" value="Заявка, форма захвата: Главная">
-				<!-- END Hidden Required Fields -->
-
-				<div class="col-12 col-md text-center gutter-custom">
-					<input
-							id="zayavkaName"
-							name="Name"
-							placeholder="Введите имя"
-							onfocus="if (this.value == '') {
-									this.placeholder=''
-									}"
-									onBlur="if (this.value == '') {
-											this.placeholder='Введите имя'
-											}"
-							required />
-				</div>
-
-				<div class="col-12 col-md text-center gutter-custom">
-					<input
-							id="applicationTelephone"
-							name="Phone"
-							type="Tel"
-							placeholder="Введите номер"
-							onfocus="if (this.value == '') {
-									this.placeholder=''
-									}"
-									onBlur="if (this.value == '') {
-											this.placeholder='Введите номер'
-											}"
-							pattern = "^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
-							required/>
-				</div>
-
-				<div class="col-12 col-md text-center gutter-custom">
-					<button class="main-header-button-submit button-black" type="submit" form="main-header-application"> Заказать звонок </button>
-				</div>
-
-			</div>
-
-			<div id="main-header-application-thanks" class="row" style="display:none"> <!--style="display:none"-->
-				<div class="col gutter-custom">
-					<button class="main-header-button-thanks button-black" type="button"> Спасибо! Мы скоро перезвоним! </button>
-				</div>
-			</div>
-		</form>
-
 	</div>
+
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+			<div class="col-auto">
+				<div class="main-header-projectTypes" id="mainHeaderProjectTypes">ДИЗАЙН ЖИЛЫХ ИНТЕРЬЕРОВ</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center gutter-custom">
+		<a href="{{ site.url-portfolio }}" class="ref-button-black" id=mainHeaderProjectsButton>Посмотреть проекты</a>
+	</div>	
 </header>

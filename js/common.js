@@ -222,27 +222,84 @@ $(function () {
 		};
 	});*/
 
+	//------------------------------------ Изменние паддинга в хедере для типов проектов -----------------------------------------
+	// win_h = $(window).height();
+	
+	// $(".main-header-projectTypes").text("olol");
 
+	var offsetTop = $(".main-header-projectTypes").offset().top
+	var offsetBottom = $("#mainHeaderProjectsButton").offset().top
+	var paddingTop = (offsetBottom - offsetTop) / 2;
+	setProjectTypesPaddingTop(paddingTop, 20);
+	$(window).resize(function() {
+		offsetTop = $(".main-header-projectTypes").offset().top
+		offsetBottom = $("#mainHeaderProjectsButton").offset().top
+		paddingTop = (offsetBottom - offsetTop) / 2;
+		setProjectTypesPaddingTop(paddingTop, 20);
+	});
+
+	function setProjectTypesPaddingTop($value, $blockHeight) {
+		$( ".main-header-projectTypes" ).css( "padding-top", $value - ($blockHeight / 2) + 16  + "px");
+	}
+
+	//------------------------------------ Смена текста в хедере -----------------------------------------
+	var typeIndex = 1;
+	function changeMainHeaderProjectTypes() {
+		// $(".news").hide();
+		// $(".news" + typeIndex).show();
+		var text = ""
+		if (typeIndex == 1) {
+			text = "ДИЗАЙН ЖИЛЫХ ИНТЕРЬЕРОВ";
+		} else if (typeIndex == 2) {
+			text = "ДИЗАЙН КОММЕРЧЕСКИХ ИНТЕРЬЕРОВ ";
+		} else if (typeIndex == 3) {
+			text = "АРХИТЕКТУРНОЕ ПРОЕКТИРОВАНИЕ";
+		} else if (typeIndex == 4) {
+			text = "ПРОФФЕСИОНАЛЬНОЕ СОПРОВОЖДЕНИЕ ПРОЕКТОВ";
+		} else if (typeIndex == 5) {
+			text = "ДЕКОРИРОВАНИЕ ИНТЕРЬЕРОВ";
+		}
+		$(".main-header-projectTypes").text(text);
+
+		$('.main-header-projectTypes').fadeIn(400, function(){
+			setTimeout(function(){
+				$('.main-header-projectTypes').fadeOut(400);
+			}, 2800);
+		});
+		
+		typeIndex++;
+		if(typeIndex > 5) {
+			typeIndex = 1;
+		}
+
+		projectTypesHeight = $(".main-header-projectTypes").height()
+		setProjectTypesPaddingTop(paddingTop, projectTypesHeight);
+	}
+	
+	$(window).ready(function() {
+		changeMainHeaderProjectTypes();
+		setInterval(changeMainHeaderProjectTypes, 3700);
+	});
 
 	//------------------------------------ Эффект Параллакса -----------------------------------------
-	$(window).scroll(function () {
+	$(window).scroll(function() {
 		var st = $(this).scrollTop();
-		if (st < 800) {
-			var stMain = st * 0.1058;
-			$(".main-header-background").css({	//--- Параллакс на главной странице
-				"transform": "translate(0%, " + stMain + "%)"
-			});
+			if (st < 1000) {
+				var stMain = st * 0.88;
+				$(".main-header-background").css({	//--- Параллакс на главной странице
+					"transform": "translate(0%, " + stMain + "px)"
+				});
+			}
 			if (st < 400) {
 				st = st * 0.23;
 				$(".project-header").css({				//--- Параллакс на странице проекта
 					"transform": "translate(0%, " + st + "%)"
 				});
-			}
-		}
+			}		
 	});
 
 	//------------------------------------ Twenty Twenty -----------------------------------------
-	$('.project-image').imagesLoaded( function() {
+	$('.project-image').imagesLoaded(function() {
 		$('.project-image-container').twentytwenty();
 	});
 
