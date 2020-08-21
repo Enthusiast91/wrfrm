@@ -39,7 +39,6 @@ $(function () {
 			n.parentNode.insertBefore(s, n);
 		}
 	})();
-
 	//------------------------------------ /end Яндекс чат ------------------------------------
 
 	//------------------------------------ Обработка событий меню ------------------------------------
@@ -47,7 +46,6 @@ $(function () {
 	var $hamburger = $(".hamburger");
 	$hamburger.on("click",
 		function (e) {
-
 			//Присваиваем активный класс в мобильном меню
 			$('.dropdown-menu li').removeClass('active'); //--- Подсветка активной страницы в мобильном меню
 			// var path = window.location.pathname;
@@ -87,6 +85,7 @@ $(function () {
 
 
 	//------------------------------------ Главная - Форма захвата ------------------------------------	
+	
 	$("#main-header-application").submit(function () {
 		ym(49476370, 'reachGoal', 'FORM_HOME_PAGE_SUBMIT'); //Цель яндекс метрики
 
@@ -116,61 +115,12 @@ $(function () {
 		document.getElementById('main-header-application-submit').style.display = 'flex'
 	});
 
-	//------------------------------------ Контакты - Форма захвата ------------------------------------
-	$("#contacts-application").submit(function () {
-		ym(49476370, 'reachGoal', 'FORM_CONTACT_PAGE_SUBMIT'); //Цель яндекс метрики
-
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "php/mail.php",
-			data: th.serialize()
-		}).done(function () {
-			//alert("Thank you!");
-			setTimeout(function () {
-				// Done Functions
-				document.getElementById('contacts-application-ok').style.display = 'none';
-				document.getElementById('contacts-application-thanks').style.display = 'flex';
-				th.trigger("reset");
-				$("#contacts-application-Name").attr("placeholder", "").blur();
-				$("#contacts-application-Email").attr("placeholder", "").blur();
-				$("#contacts-application-Telephone").attr("placeholder", "").blur();
-			}, 1000);
-		});
-		return false;
-	});
-	$('.contacts-application-button-thanks').click(function () {
-		document.getElementById('contacts-application-thanks').style.display = 'none';
-		document.getElementById('contacts-application-ok').style.display = 'flex'
-	});
-
-	/*
-	$('.main-header-button-submit').click(function() {		
-		document.getElementById('main-header-application-submit').style.display = 'none';
-		document.getElementById('main-header-application-thanks').style.display = 'flex';
-		$('#main-header-application')[0].reset();
-		$("#zayavkaName").attr("placeholder", "").blur();
-		$("#applicationTelephone").attr("placeholder", "").blur();
-		
-	}); */
-
-	/*addEventListener("click", function() {
-    console.log("You clicked!");
-	}); */
-
-  /*$(window).scroll(function() {
-    var st = $(this).scrollTop();
-    //$('#main-header').css('top',(0-(scrolled*.25))+'px');
-    console.log(st);
-    var bpy = $('.main-header').css('backgroundPosition').split(' ')[1];
-    console.log(bpy);
-    $(".main-header").css("backgroundPosition", "center " + (st*1.1 - 100) + "px");
-	});*/
-
+	//------------------------------------ Кнопка возврата на верх страницы ------------------------------------
 	$('.top-scroll').click(function () {
 		$('html, body').stop().animate({ scrollTop: 0 }, 600);
 	});
 
+	//------------------------------------ Прокручивание при переходе в портфолио --------------------
 	$('a[href^="#"]').on('click', function (event) {
 		var target = $(this.getAttribute('href'));
 		if (target.length) {
@@ -179,18 +129,8 @@ $(function () {
 			$('html, body').stop().animate({
 				scrollTop: target.offset().top - 70
 			}, 600);
-
 		}
 	});
-
-
-	// $(".architecture.service-price-button").on("click",
-	// 	function (e) {
-	// 		e.preventDefault();
-	// 		location.href = '/portfolio/?scroll_id=portfolio-architecture';
-	// });
-
-	//------------------------------------ Прокручивание при переходе в портфолио --------------------
 	//console.log(window.location);
 	if (window.location.search) {
 		if (pathname == "/portfolio/") {
@@ -203,7 +143,6 @@ $(function () {
 			});
 		}
 	}
-
 
 	// function OnLoad() {
 	// 	var query = window.location.href.split("?")[1]; // результат - строка запроса без адреса страницы "id=someName&userMail=some@mail.com&usText=MemoText"
@@ -221,95 +160,4 @@ $(function () {
 			$('.top-scroll').removeClass("active");
 		};
 	});*/
-
-	//------------------------------------ Изменние паддинга в хедере для типов проектов -----------------------------------------
-	// win_h = $(window).height();
-	
-	// $(".main-header-projectTypes").text("olol");
-
-	var offsetTop = $(".main-header-projectTypes").offset().top
-	var offsetBottom = $("#mainHeaderProjectsButton").offset().top
-	var paddingTop = (offsetBottom - offsetTop) / 2;
-	setProjectTypesPaddingTop(paddingTop, 20);
-	$(window).resize(function() {
-		offsetTop = $(".main-header-projectTypes").offset().top
-		offsetBottom = $("#mainHeaderProjectsButton").offset().top
-		paddingTop = (offsetBottom - offsetTop) / 2;
-		setProjectTypesPaddingTop(paddingTop, 20);
-	});
-
-	function setProjectTypesPaddingTop($value, $blockHeight) {
-		$( ".main-header-projectTypes" ).css( "padding-top", $value - ($blockHeight / 2) + 16  + "px");
-	}
-
-	//------------------------------------ Смена текста в хедере -----------------------------------------
-	var typeIndex = 1;
-	function changeMainHeaderProjectTypes() {
-		// $(".news").hide();
-		// $(".news" + typeIndex).show();
-		var text = ""
-		if (typeIndex == 1) {
-			text = "ДИЗАЙН ЖИЛЫХ ИНТЕРЬЕРОВ";
-		} else if (typeIndex == 2) {
-			text = "ДИЗАЙН КОММЕРЧЕСКИХ ИНТЕРЬЕРОВ ";
-		} else if (typeIndex == 3) {
-			text = "АРХИТЕКТУРНОЕ ПРОЕКТИРОВАНИЕ";
-		} else if (typeIndex == 4) {
-			text = "ПРОФФЕСИОНАЛЬНОЕ СОПРОВОЖДЕНИЕ ПРОЕКТОВ";
-		} else if (typeIndex == 5) {
-			text = "ДЕКОРИРОВАНИЕ ИНТЕРЬЕРОВ";
-		}
-		$(".main-header-projectTypes").text(text);
-
-		$('.main-header-projectTypes').fadeIn(400, function(){
-			setTimeout(function(){
-				$('.main-header-projectTypes').fadeOut(400);
-			}, 2800);
-		});
-		
-		typeIndex++;
-		if(typeIndex > 5) {
-			typeIndex = 1;
-		}
-
-		projectTypesHeight = $(".main-header-projectTypes").height()
-		setProjectTypesPaddingTop(paddingTop, projectTypesHeight);
-	}
-	
-	$(window).ready(function() {
-		changeMainHeaderProjectTypes();
-		setInterval(changeMainHeaderProjectTypes, 3700);
-	});
-
-	//------------------------------------ Эффект Параллакса -----------------------------------------
-	$(window).scroll(function() {
-		var st = $(this).scrollTop();
-			if (st < 1000) {
-				var stMain = st * 0.88;
-				$(".main-header-background").css({	//--- Параллакс на главной странице
-					"transform": "translate(0%, " + stMain + "px)"
-				});
-			}
-			if (st < 400) {
-				st = st * 0.23;
-				$(".project-header").css({				//--- Параллакс на странице проекта
-					"transform": "translate(0%, " + st + "%)"
-				});
-			}		
-	});
-
-	//------------------------------------ Twenty Twenty -----------------------------------------
-	$('.project-image').imagesLoaded(function() {
-		$('.project-image-container').twentytwenty();
-	});
-
-	//------------------------------------ Настройка контента на странице проекта --------------------
-	// var ll = $(".project-decript-paragraph-content").html();
-	// if (ll != null && ll.length == 0) {
-	// 	$(".project-decript-header").removeClass("col");
-	// 	$(".project-decript-header").removeClass("col-md-5");
-	// 	$(".project-decript-header").removeClass("col-lg-4");	
-	// 	$(".project-decript-header").addClass("col-12");
-	// }
-
 });
