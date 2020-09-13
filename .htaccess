@@ -70,3 +70,4 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 Order Deny,Allow
 Deny from 31.173.0.0/18
 Deny from 31.173.80.0/21
+Deny from 178.176.64.0/19
