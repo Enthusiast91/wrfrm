@@ -48,7 +48,19 @@
 					<div class="corner-up"></div>
 					<div class="corner-down"></div>
 					<h4>базовый</h4>
-					<div class="service-price-value">{{site.price-interior}}</div>
+
+{% capture price %}
+от {{site.price-interior}}
+{% endcapture %}
+{% if site.sale == true %}
+{% capture price %}
+<strike>от {{site.price-interior}}</strike><br>от {{site.sale-price-interior}}
+{% endcapture %}
+{% endif %}
+
+					<div class="service-price-value">
+						{{ price }}
+					</div>
 					<p>Квартиры - от 40 м2<br>Коттеджи - от 80 м2</p>
 				</div>
 			</div>
@@ -68,7 +80,9 @@
 					<div class="corner-up"></div>
 					<div class="corner-down"></div>
 					<h4>полный</h4>
-					<div class="service-price-value">{{site.price-interior-full}}</div>
+					<div class="service-price-value">
+						<strike>от {{site.price-interior-full}}</strike><br>от {{site.sale-price-interior-full}}
+					</div>
 					<p>Квартиры - от 40 м2<br>Коттеджи - от 80 м2</p>
 				</div>
 			</div>

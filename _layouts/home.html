@@ -4,6 +4,10 @@
 
 {% include /home-header.html %}
 
+{% if site.sale == true %}
+{% include /home-sale.html %}
+{% endif %}
+
 {% include /home-services.html %}
 
 {% include /home-care.html %}

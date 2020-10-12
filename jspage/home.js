@@ -1,5 +1,11 @@
 $(function () {
 	
+	//------------------------------------ Запись в лог обращения -----------------------------------------
+	$.ajax({
+		type: "POST",
+		url: "php/log.php"
+	});
+
 	//------------------------------------ Выравнивание позиции сменяющихся надписей-----------------------------------------------
 	var projectTypes = $("#mainHeaderProjectTypes");
 	var projectsButton = $("#mainHeaderProjectsButton");
@@ -65,7 +71,7 @@ $(function () {
 
 		setProjectTypesPaddingTop();
 	};
-
+	
 	/*
 	$('.main-header-button-submit').click(function() {		
 		document.getElementById('main-header-application-submit').style.display = 'none';

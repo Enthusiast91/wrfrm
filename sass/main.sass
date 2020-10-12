@@ -470,8 +470,9 @@ button
 	line-height: $top-line-height
 	padding-left: 20px	
 	img
-		height: 50px
+		height: 42px
 		width: auto
+		margin-bottom: 4px
 
 .main-menu
 	font-family: panton, sans-serif
@@ -505,7 +506,7 @@ button
 				color: $menu-text-active
 		.social-link-circle
 			overflow: hidden
-			margin: 0px 8px 20px
+			margin: 0px 8px 14px
 		.main-menu-a.phone			
 			font-family: $default-font
 
@@ -545,7 +546,7 @@ button
 .main-header
 	position: relative
 	padding-top: 13vh
-	min-height: 94vh
+	min-height: 94.5vh
 	//background-size: cover
 	//background-position: center 35%
 	background-color: #aea7a1
@@ -652,6 +653,17 @@ button
 	.gutter-custom
 		padding: 0 10px
 
+//============ Main Sale ============
+.main-sale
+	position: relative
+	background-color: $button-black
+	padding-top: 6px
+	text-align: center
+	&-text
+		font-size: 28px
+		line-height: 48px
+		color: $text-color-light
+
 //============ Main Services ============
 
 .main-services
@@ -685,7 +697,11 @@ button
 	p
 		margin: 30px 30px 0
 	.overlay-img-white
-		line-height: 368px
+		line-height: 400px
+		&-text
+			vertical-align: middle
+			display: inline-block
+			line-height: 22px
 
 .main-services-button
 	text-align: center
@@ -926,6 +942,11 @@ button
 			// 		//background-color: rgba(47, 46, 46, 0.85)
 			// 		//color: #f2f0dc
 
+.services-item
+	.overlay-img-white-text
+		display: inline-block
+		line-height: 22px
+		vertical-align: middle
 // .overlay-content
 //   white-space: nowrap
 //   position: absolute
@@ -1068,6 +1089,9 @@ button
 		margin-bottom: 60px
 	.service-price-figure
 		margin-top: 60px
+
+.service-price-value
+	line-height: 26px
 
 //============ Decorativ Corners ============
 $cornerLength: 30px
@@ -1308,5 +1332,31 @@ $gapBorder: 2px
 	p
 		padding-bottom: 10px
 //================================= END Policy Page ===============================
+
+#telegram-button
+	position: fixed
+	right: 20px
+	bottom: 20px
+	display: inline-block
+	width: 48px
+	height: 48px
+	text-align: center
+	line-height: 46px	
+	color: $text-color
+	transition: all .4s ease
+	font-size: 44px
+	&:hover
+		color: $text-color-light
+		.fa
+			background-color: #39ade7
+			border-color: #39ade7
+	&:active
+		.fa
+			background-color: #39ade7
+	.fa
+		background-color: #fff
+		border-radius: 50%
+		border: 2px solid #fff
+
 
 @import "media" // Всегда в конце

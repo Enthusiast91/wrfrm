@@ -74,6 +74,12 @@ price-supervision: 28<sup> </sup>000 р/мес
 price-consultation: 7<sup> </sup>000 р
 price-decor: 1000 р/м2
 
+sale: true
+sale-price-interior: 2000 р/м2
+sale-price-interior-full: 2300 р/м2
+sale-price-interior-commerce: 1300 р/м2
+sale-price-interior-commerce-full: 1600 р/м2
+
 url-interior: uslugi/dizajn-interera/
 url-interior-commerce: uslugi/dizajn-interera-kommercheskij/
 url-architecture: uslugi/arkhitekturnyj-proekt/

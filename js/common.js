@@ -77,15 +77,17 @@ $(function () {
 		}
 	});
 
+	//------------------------------------ IP в Яндекс метрику ------------------------------------
+	$.getJSON('php/getip.php', function(data) {
+		ym(49476370, 'userParams', { ip_address: data.ip });
+	});
 
 	//------------------------------------ Цель ЯМ - нажатие на номер Телефона ------------------------
 	$(".target-ym-phone").click(function () {
 		ym(49476370, 'reachGoal', 'PHONE_PRESSED');
 	});
 
-
 	//------------------------------------ Главная - Форма захвата ------------------------------------	
-	
 	$("#main-header-application").submit(function () {
 		ym(49476370, 'reachGoal', 'FORM_HOME_PAGE_SUBMIT'); //Цель яндекс метрики
 
@@ -120,7 +122,7 @@ $(function () {
 		$('html, body').stop().animate({ scrollTop: 0 }, 600);
 	});
 
-	//------------------------------------ Прокручивание при переходе в портфолио --------------------
+	//------------------------------------ Прокручивание при переходе в портфолио ------------------------------
 	$('a[href^="#"]').on('click', function (event) {
 		var target = $(this.getAttribute('href'));
 		if (target.length) {
@@ -144,6 +146,20 @@ $(function () {
 		}
 	}
 
+	(function () {
+		// текущий час
+		var currentHour = (new Date()).getUTCHours() + 3;
+		if (currentHour < 10 || currentHour > 20) {
+			$("#telegram-button").hide();
+		}
+	})();
+
+	//------------------------------------ Чат по времени ------------------------------------
+	// var currentHour = (new Date()).getUTCHours() + 3;
+	// if (currentHour < 10 || currentHour > 20) {
+	// 	$("#telegram-button").hide();
+	// }
+
 	// function OnLoad() {
 	// 	var query = window.location.href.split("?")[1]; // результат - строка запроса без адреса страницы "id=someName&userMail=some@mail.com&usText=MemoText"
 	// 	var params = query.split("&");  // результат - массив строк из пар "id=someName", "userMail=some@mail.com", "usText=MemoText"
@@ -160,4 +176,24 @@ $(function () {
 			$('.top-scroll').removeClass("active");
 		};
 	});*/
+
+	// <!-- HoverSignal -->
+	// (function (d, w) {
+	// 	var currentHour = (new Date()).getHours();
+	// 	if (currentHour >= 10 && currentHour <= 20) {
+
+	// 		var n = d.getElementsByTagName("script")[0],
+	// 		s = d.createElement("script"),
+	// 		f = function () { 
+	// 			n.parentNode.insertBefore(s, n); 
+	// 		};
+	// 		s.type = "text/javascript";
+	// 		s.async = true;
+	// 		s.src = "https://app.hoversignal.com/Api/Script/2e74bebf-11ac-403b-9306-f6918c55ac62";
+	// 		if (w.opera == "[object Opera]") {
+	// 			d.addEventListener("DOMContentLoaded", f, false);
+	// 		} else { f(); }
+	// 	}
+	// })(document, window);
+	
 });

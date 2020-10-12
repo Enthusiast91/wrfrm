@@ -8,6 +8,7 @@ RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^www.wrfrm\.com$ [NC]
 RewriteRule ^(.*)$ https://wrfrm.com/$1 [R=301,L]
+
 # RewriteCond %{HTTP:HTTPS} !=on [NC]
 # RewriteRule ^(.*)$ https://wrightform.ru/$1 [R=301,L]
 # SetEnvIf X-Forwarded-Proto https HTTPS=on
@@ -67,6 +68,13 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 
 </ifModule>
 
+<Files ~ "\.(log)$">  
+
+deny from all   
+
+</Files> 
+
+# Blocking bots
 Order Deny,Allow
 Deny from 31.173.0.0/18
 Deny from 31.173.80.0/21

@@ -4,7 +4,19 @@
 			<a href="{{ include.url }}">
 				<div class="services-image">
 					<img class="services-image-img" src="{{ include.image }}" alt="{{ include.image-alt }}">
-					<div class="overlay-img-white">от {{ include.price }}</div>
+
+{% capture price %}
+от {{ include.price }}
+{% endcapture %}
+{% if include.sale == true %}
+{% capture price %}
+<div class="overlay-img-white-text">
+	<strike>от {{include.price}}</strike><br>от {{include.sale-price}}
+</div>
+{% endcapture %}
+{% endif %}
+
+					<div class="overlay-img-white">{{ price }}</div>
 				</div>
 			</a>
 		</div>

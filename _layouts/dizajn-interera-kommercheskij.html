@@ -42,7 +42,19 @@
 					<div class="corner-up"></div>
 					<div class="corner-down"></div>
 					<h4>базовый</h4>
-					<div class="service-price-value">{{site.price-interior-commerce}}</div>
+					
+{% capture price-commerce %}
+от {{site.price-interior-commerce}}
+{% endcapture %}
+{% if site.sale == true %}
+{% capture price-commerce %}
+<strike>от {{site.price-interior-commerce}}</strike><br>от {{site.sale-price-interior-commerce}}
+{% endcapture %}
+{% endif %}
+
+					<div class="service-price-value">
+						{{ price-commerce }}
+					</div>
 					<p>Помещения - от 40 м2</p>
 				</div>
 			</div>
@@ -62,7 +74,9 @@
 					<div class="corner-up"></div>
 					<div class="corner-down"></div>
 					<h4>полный</h4>
-					<div class="service-price-value">{{site.price-interior-commerce-full}}</div>
+					<div class="service-price-value">
+						<strike>от {{site.price-interior-commerce-full}}</strike><br>от {{site.sale-price-interior-commerce-full}}
+					</div>
 					<p>Помещения - от 40 м2</p>
 				</div>
 			</div>

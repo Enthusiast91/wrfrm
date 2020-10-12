@@ -6,7 +6,7 @@
 				<h2>Наши услуги</h2>
 			</div>
 		</div>
-		
+
 		<!-- Основные услуги-->
 		<div class="row">
 			<div class="col-md-6 main-services-col">
@@ -15,7 +15,22 @@
 					<a href="{{ site.url-interior }}">
 						<div class="main-services-item-image interior">
 								<img src="{{ site.image-interior }}" alt="Разработка дизайн-проектов для домов и квартир">
-								<div class="overlay-img-white">от {{site.price-interior}}</div>
+								<div class="overlay-img-white">
+
+{% capture price %}
+от {{site.price-interior}}
+{% endcapture %}
+{% if site.sale == true %}
+{% capture price %}
+<div class="overlay-img-white-text">
+	<strike>от {{site.price-interior}}</strike><br>от {{site.sale-price-interior}}
+</div>
+{% endcapture %}
+{% endif %}
+									<div class="overlay-img-white-text">
+										{{ price }}
+									</div>
+								</div>
 						</div>
 					</a>
 					<!-- <p>Разработка дизайн-проектов для домов и квартир. Создаем индивидуальное ДНК для вашего интерьера.</p> -->
@@ -31,7 +46,23 @@
 					<a href="{{ site.url-interior-commerce }}">
 						<div class="main-services-item-image">
 							<img src="{{ site.image-interior-commerce }}" alt="Создаем эргономичные и имиджевые пространства под конкретные задачи бизнеса">
-							<div class="overlay-img-white">от {{site.price-interior-commerce}}</div>
+							<div class="overlay-img-white"> 
+
+{% capture price-commerce %}
+от {{site.price-interior-commerce}}
+{% endcapture %}
+{% if site.sale == true %}
+{% capture price-commerce %}
+<div class="overlay-img-white-text">
+	<strike>от {{site.price-interior-commerce}}</strike><br>от {{site.sale-price-interior-commerce}}
+</div>
+{% endcapture %}
+{% endif %}
+
+								<div class="overlay-img-white-text">
+									{{ price-commerce }}			
+								</div>	
+							</div>
 						</div>
 					</a>
 					<!-- <p>Создаем эргономичные и имиджевые пространства под конкретные задачи бизнеса.</p> -->
