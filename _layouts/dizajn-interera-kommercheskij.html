@@ -74,8 +74,18 @@
 					<div class="corner-up"></div>
 					<div class="corner-down"></div>
 					<h4>полный</h4>
+
+{% capture price-commerce-full %}
+от {{site.price-interior-commerce-full}}
+{% endcapture %}
+{% if site.sale == true %}
+{% capture price-commerce-full %}
+<strike>от {{site.price-interior-commerce-full}}</strike><br>от {{site.sale-price-interior-commerce-full}}
+{% endcapture %}
+{% endif %}
+
 					<div class="service-price-value">
-						<strike>от {{site.price-interior-commerce-full}}</strike><br>от {{site.sale-price-interior-commerce-full}}
+						{{ price-commerce-full }}
 					</div>
 					<p>Помещения - от 40 м2</p>
 				</div>

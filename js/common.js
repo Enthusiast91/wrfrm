@@ -15,30 +15,30 @@ $(function () {
 	//============ /end svg-icon ============
 
 	//------------------------------------ Яндекс чат ------------------------------------
-	(function () {
-		// текущий час
-		var currentHour = (new Date()).getHours();
-		if (currentHour >= 10 && currentHour <= 20) {
+	// (function () {
+	// 	// текущий час
+	// 	var currentHour = (new Date()).getHours();
+	// 	if (currentHour >= 10 && currentHour <= 20) {
 
-			window['yandexChatWidgetCallback'] = function () {
-				try {
-					window.yandexChatWidget = new Ya.ChatWidget({
-						guid: '13deb08e-3a96-4722-8b80-6b136e807eec',
-						buttonText: 'Напишите нам, мы онлайн!',
-						title: 'Чат',
-						theme: 'light',
-						collapsedDesktop: 'hover',
-						collapsedTouch: 'always'
-					});
-				} catch (e) { }
-			};
-			var n = document.getElementsByTagName('script')[0],
-				s = document.createElement('script');
-			s.async = true;
-			s.src = 'https://chat.s3.yandex.net/widget.js';
-			n.parentNode.insertBefore(s, n);
-		}
-	})();
+	// 		window['yandexChatWidgetCallback'] = function () {
+	// 			try {
+	// 				window.yandexChatWidget = new Ya.ChatWidget({
+	// 					guid: '13deb08e-3a96-4722-8b80-6b136e807eec',
+	// 					buttonText: 'Напишите нам, мы онлайн!',
+	// 					title: 'Чат',
+	// 					theme: 'light',
+	// 					collapsedDesktop: 'hover',
+	// 					collapsedTouch: 'always'
+	// 				});
+	// 			} catch (e) { }
+	// 		};
+	// 		var n = document.getElementsByTagName('script')[0],
+	// 			s = document.createElement('script');
+	// 		s.async = true;
+	// 		s.src = 'https://chat.s3.yandex.net/widget.js';
+	// 		n.parentNode.insertBefore(s, n);
+	// 	}
+	// })();
 	//------------------------------------ /end Яндекс чат ------------------------------------
 
 	//------------------------------------ Обработка событий меню ------------------------------------

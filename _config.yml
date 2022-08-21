@@ -63,18 +63,18 @@ telephone-third: +7 927 746-01-11
 phone-href: 'tel:+79312459501'
 phone-second-href: 'tel:+79171180270'
 
-price-interior: 2200 р/м2
-price-interior-full: 2500 р/м2
-price-interior-commerce: 1500 р/м2
-price-interior-commerce-full: 1800 р/м2
-price-architecture: 1800 р/м2
-pice-build: от 12<sup> </sup>000 р/м2
-price-visualisation: 700 р/м2
+price-interior: 2700 р/м2
+price-interior-full: 3000 р/м2
+price-interior-commerce: 1800 р/м2
+price-interior-commerce-full: 2200 р/м2
+price-architecture: 2000 р/м2
+pice-build: от 14<sup> </sup>000 р/м2
+price-visualisation: 800 р/м2
 price-supervision: 28<sup> </sup>000 р/мес
 price-consultation: 7<sup> </sup>000 р
 price-decor: 1000 р/м2
 
-sale: true
+sale: false
 sale-price-interior: 2000 р/м2
 sale-price-interior-full: 2300 р/м2
 sale-price-interior-commerce: 1300 р/м2
@@ -90,8 +90,8 @@ url-consultation: uslugi/konsultaciya/
 url-decor: uslugi/dekorirovanie/
 url-portfolio: portfolio/
 
-image-interior: images/dizajn-interera/2019-07-29-kvartira-trekhkomnatnaya-120-kv-m-arcebushevskaya/6.jpg
-image-interior-commerce: images/dizajn-interera/2018-08-07-salon-krasoty-volgar/8.jpg
+image-interior: images/dizajn-interera/2020-09-13-kvartira-pyatikomnatnaya-170-kv-m-klubnyj-dom-oktaviya/7.jpg
+image-interior-commerce: images/dizajn-interera/2020-06-12-salon-krasoty-premium-300-kv-m/2.jpg
 image-architecture: img/main/2-arkhitekturnyj-proekt.jpg
 image-build: img/main/4-remont-pod-klyuch.jpg
 image-visualisation: img/main/6-dizajn-interera.jpg

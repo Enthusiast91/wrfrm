@@ -80,9 +80,19 @@
 					<div class="corner-up"></div>
 					<div class="corner-down"></div>
 					<h4>полный</h4>
+
+{% capture price-full %}
+от {{site.price-interior-full}}
+{% endcapture %}
+{% if site.sale == true %}
+{% capture price-full %}
+<strike>от {{site.price-interior-full}}</strike><br>от {{site.sale-price-interior-full}}
+{% endcapture %}
+{% endif %}
+
 					<div class="service-price-value">
-						<strike>от {{site.price-interior-full}}</strike><br>от {{site.sale-price-interior-full}}
-					</div>
+						{{ price-full }}
+					</div>					
 					<p>Квартиры - от 40 м2<br>Коттеджи - от 80 м2</p>
 				</div>
 			</div>

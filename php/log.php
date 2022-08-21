@@ -1,7 +1,7 @@
 <?php
 $pathFile = file("path.log");
 $lastDay = $pathFile[0];
-$today = date("d.m.Y", mktime(date("H")+1, date("i"), date("s"), date("m"), date("d"), date("Y")));
+$today = date("Y.m.d", mktime(date("H")+1, date("i"), date("s"), date("m"), date("d"), date("Y")));
 
 $file = "logs/".$lastDay.".log";
 if ($lastDay != $today) {
